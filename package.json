@@ -1,0 +1,34 @@
+{
+  "name": "webos-remote",
+  "version": "0.1.0",
+  "description": "Connects to an LG WebOS TV",
+  "main": "index.js",
+  "scripts": {
+    "build": "watchify public/js/remote.js -o 'babel --out-file public/js/app.js'"
+  },
+  "repository": {
+    "url": "https://github.com/sargodarya/webos-connect"
+  },
+  "binary": "src/server.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "^6.2.0",
+    "babel-preset-react": "^6.1.18",
+    "connect": "^3.4.0",
+    "connect-static": "^1.5.1",
+    "finalhandler": "^0.4.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-tabs": "^0.5.1",
+    "reflux": "^0.3.0",
+    "serve-static": "^1.10.0",
+    "webpack": "^1.12.9",
+    "websocket": "^1.0.22"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18"
+  }
+}

@@ -1,0 +1,158 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.channel-list {
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  border: 1px solid #AAA;
+  padding: 1em;
+}
+
+.channel-list__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.channel {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #DDD;
+  cursor: pointer
+}
+
+.channel:hover {
+  background: #EEE;
+}
+
+.channel__number {
+  display: inline-block;
+  text-align: right;
+  width: 30px;
+  margin-right: 0.5em;
+  color: #AAA;
+}
+
+.channel__name {
+  color: #777;
+}
+
+/** TABS **/
+.channel-list__search[type=search] {
+  width: 100%;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+.channel-list .ReactTabs__TabList {
+  background: #EEE;
+  font-size: 1.2rem;
+  border: 0;
+}
+
+.channel-list .ReactTabs__Tab {
+  border: none;
+  position: static;
+  bottom: 0;
+}
+
+.channel-list .ReactTabs__Tab--selected[role=tab][aria-selected=true]{
+  background: #CCC;
+  border-radius: 0;
+}
+
+/** Channel Header **/
+.channel-header {
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 25%;
+}
+
+.channel-header__number {
+  font-size: 5rem;
+  color: #DDD;
+  background: #222;
+  display: inline-block;
+  padding: 10px 20px;
+  width: 120px;
+  text-align: right;
+  transform: skewX(-15deg);
+  transform-origin: 0% 0%;
+}
+
+.channel-header__info {
+  display: inline-block;
+}
+
+.channel-header__name {
+  font-size: 3rem;
+  background: linear-gradient(#EEE, #777);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.channel-header__program {
+  font-size: 1.5rem;
+  color: #BBB;
+}
+
+.channel-header__program-duration {
+  margin-right: 1em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.progress-bar {
+  width: 100%;
+}
+
+.progress {
+  height: 3px;
+  background: cyan;
+}
+
+/** Program List **/
+
+.program-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 15%;
+}
+
+.program-list__program {
+  margin-bottom: 1em;
+}
+
+.program-list__time {
+  font-size: 1.4rem;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.program-list__name { 
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.program-list__short-description {
+  font-size: 1.2rem;
+}
