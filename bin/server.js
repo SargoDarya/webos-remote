@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * This file is simply used as a websocket proxy so the TV doesn't
  * get an origin header which it considers invalid
