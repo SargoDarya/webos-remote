@@ -58,7 +58,7 @@ wsServer.on('request', function(request) {
     });
   });
   
-  socketClient.connect('ws://192.168.178.41:3000');
+  socketClient.connect(tvAddress);
 });
 
 //create node.js http server and listen on port 
